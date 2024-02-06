@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward's Watersports - Jetski Rentals</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5bc3d8;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .lake-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #adadad;
+        }
+        .container {
+        max-width: 950px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #000000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        }
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    <header>
+        <h1>Welcome to Edward's Watersports</h1>
+        <p>Jetski Rentals</p>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Edward's Watersports is a locally owned business that offers thrilling jetski rental experiences on both Coeur d'Alene Lake and Hayden Lake. Whether you are an adventure seeker or simply looking for a fun day on the water, these are perfect for you.</p>
+        <img class="centered-image" src="/Users/grantmoody/Desktop/Website/sparktrixx.jpeg" alt="Jetski Image">
+        <h2>Rental Options</h2>
+        <p>We offer 3 Seadoo Spark Trixx to suit your preferences and group size. Our rentals are available for 3, 5, or 8 hour sessions, providing you with flexibility to enjoy the lakes at your own pace.</p>
+        <p>Pricing:
+            <ul>
+                <li>3 Hour: $200 per jetski</li>
+                <li>5 Hour: $300 per jetski</li>
+                <li>8 Hour: $400 per jetski</li>
+            </ul>
+        </p>
+        <h2>Contact Us</h2>
+        <p>For further inquiries, please contact us:</p>
+        <p>Ethand Edwards</p>
+        <ul>
+            <li>Phone: (123) 456-7890</li>
+            <li>Email: ethanedwards@gmail.com</li>
+        </ul>
+        <div class="lake-info">
+            <h2>Lake Information</h2>
+            <p>We operate on two stunning lakes in northern Idaho:</p>
+            <ul>
+                <li><a href="https://visitnorthidaho.com/activity/lake-coeur-dalene/" target="_blank">Coeur d'Alene Lake</a></li>
+                <li><a href="https://visitnorthidaho.com/activity/hayden-lake/" target="_blank">Hayden Lake</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

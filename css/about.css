@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color:  white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.about{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #71d0ff 0%, #1279b1 28.53%, #0825c8 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+section{
+    padding: 0 10%;
+}
+.about-text h1{
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+.about-text h2{
+    font-size: 25px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+.about-text h5{
+        color: white;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 20px;
+        font-weight: 250;
+        line-height: 1;
+        margin-bottom: 20px;
+}
+.founder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.founder img{
+    width: auto;
+    height: 400px;
+    margin-left: 36%;
+}
+.founder-img h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+.founder-text h1{
+    font-size: 25px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+.founder-text h5{
+    color: white;
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 1;
+    margin-bottom: 50px;
+    padding-bottom: 10%;
+}
