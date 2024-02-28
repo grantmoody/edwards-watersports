@@ -21,13 +21,13 @@ header{
 .logo{
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 .navlist{
     display: flex;
 }
 .navlist a{
-    color:  white;
+    color:  black;
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
@@ -35,10 +35,10 @@ header{
     transition: all .55s ease;
 }
 .navlist a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 #menu-icon{
-    color: white;
+    color: black;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
@@ -48,7 +48,7 @@ header{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #71d0ff 0%, #1279b1 28.53%, #0825c8 75.52%);
+    background: white;
     position: relative;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -61,18 +61,18 @@ section{
     font-size: 40px;
     text-align: center;
     line-height: 1;
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 .about-text h2{
     font-size: 25px;
     text-align: center;
     line-height: 1;
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 .about-text h5{
-        color: white;
+        color: black;
         text-align: center;
         margin-left: 15%;
         margin-right: 15%;
@@ -94,18 +94,18 @@ section{
     font-size: 30px;
     text-align: center;
     line-height: 1;
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 .founder-text h1{
     font-size: 25px;
     text-align: center;
     line-height: 1;
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 .founder-text h5{
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 250;
     line-height: 1;
