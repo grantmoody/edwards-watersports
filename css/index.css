@@ -28,7 +28,14 @@ header{
 }
 .navlist{
     display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
+.navlist li {
+    display: inline-block; 
+    list-style: none;
+}
+
 .navlist a{
     color:  black;
     margin-left: 60px;
@@ -37,9 +44,18 @@ header{
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
-    border-bottom: 2px solid red;
+
+.navlist li a {
+    text-decoration: none; 
+    color: black; 
+    padding: 10px; 
+    transition: color 0.3s;
 }
+
+.navlist li a:hover {
+    color: gray;
+}
+
 #menu-icon{
     color: black;
     font-size: 35px;
@@ -162,7 +178,12 @@ footer {
     text-decoration: none;
     font-size: x-large;
 }
-@media (max-width: 1535px){
+
+.bx {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1535px){
     header{
         padding: 15px 3%;
         transition: .2s;
@@ -176,13 +197,13 @@ footer {
         transition: .2s;
     }
 }
-@media (max-width: 1460px){
+@media screen and (max-width: 1460px){
     section{
         padding: 0 12%;
         transition: .2s;
     }
 }
-@media (max-width: 1340px){
+@media screen and (max-width: 1340px){
     .hero-img img{
         width: 100%;
         height: auto;
@@ -195,7 +216,7 @@ footer {
         margin-bottom: 25px;
     }
 }
-@media (max-width: 1195px){
+@media screen and (max-width: 1195px){
     section{
         padding: 0 3%;
         transition: .2s;
@@ -215,36 +236,41 @@ footer {
         gap: 1rem;
         grid-template-columns: 1fr ;
     }
-    /* .icons{
-        display: none;
-    } */
     .scroll-down{
         display: none;
     }
 }
-@media (max-width: 990px){
+@media screen and (max-width: 990px){
     #menu-icon{
         display: block;
     }
-    .navlist{
+    .navlist {
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 300px;
-        height: 40vh;
-        background: red;
+        width: 35vw; 
+        height: 40vh; 
+        background: rgb(198, 192, 192);
         display: flex;
+        border-radius: 5%;
         align-items: center;
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 5vh 5vw;
         transition: all .55s ease;
     }
-    .navlist a{
+    .navlist li a {
         display: block;
-        margin: 7px 0;
         margin-left: 0;
+        text-decoration: none; 
+        color: black; 
+        padding: 5px; 
+        transition: color 0.3s; 
+        text-align: center;
     }
-    .navlist.open{
+    .navlist li {
+        border-bottom: 2px solid black;
+    }
+    .navlist.open {
         right: 0;
     }
 }
