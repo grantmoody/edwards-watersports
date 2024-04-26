@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,7 +6,8 @@
     list-style: none;
     text-decoration: none;
 }
-header{
+
+header {
     position: absolute;
     right: 0;
     top: 0;
@@ -18,33 +19,52 @@ header{
     padding: 33px 9%;
     background: transparent;
 }
-.logo{
+
+.logo {
     font-size: 30px;
     font-weight: 700;
     color: black;
 }
-.navlist{
+
+.navlist {
     display: flex;
 }
-.navlist a{
-    color:  black;
+
+.navlist li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navlist a {
+    color: black;
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
-    border-bottom: 2px solid black;
+
+.navlist li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s;
 }
-#menu-icon{
+
+.navlist a:hover {
+    border-bottom: 2px solid red;
+}
+
+
+#menu-icon {
     color: black;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
     display: none;
 }
-.contact-page{
+
+.contact-page {
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -55,29 +75,34 @@ header{
     align-items: center;
     gap: 2rem;
 }
-section{
+
+section {
     padding: 0 19%;
 }
-.contact-text h5{
+
+.contact-text h5 {
     font-size: 14px;
     font-weight: 400;
     color: black;
     margin-bottom: 20px;
 }
-.contact-text h1{
+
+.contact-text h1 {
     font-size: 60px;
     line-height: 1;
     color: black;
     margin: 0 0 45px;
 }
-.info{
+
+.info {
     color: black;
     font-size: 15px;
     line-height: 1.9;
     margin-left: 10px;
     margin-bottom: 20px;
 }
-.contact-img img{
+
+.contact-img img {
     width: auto;
     height: 700px;
 }

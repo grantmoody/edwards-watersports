@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,7 +6,8 @@
     list-style: none;
     text-decoration: none;
 }
-header{
+
+header {
     position: absolute;
     right: 0;
     top: 0;
@@ -18,33 +19,39 @@ header{
     padding: 33px 9%;
     background: transparent;
 }
-.logo{
+
+.logo {
     font-size: 30px;
     font-weight: 700;
     color: black;
 }
-.navlist{
+
+.navlist {
     display: flex;
 }
-.navlist a{
-    color:  black;
+
+.navlist a {
+    color: black;
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
-    border-bottom: 2px solid black;
+
+.navlist a:hover {
+    border-bottom: 2px solid red;
 }
-#menu-icon{
+
+#menu-icon {
     color: black;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
     display: none;
 }
-.about{
+
+.about {
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -54,57 +61,66 @@ header{
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
 }
-section{
+
+section {
     padding: 0 10%;
 }
-.about-text h1{
+
+.about-text h1 {
     font-size: 40px;
     text-align: center;
     line-height: 1;
     color: black;
     margin-bottom: 20px;
 }
-.about-text h2{
+
+.about-text h2 {
     font-size: 25px;
     text-align: center;
     line-height: 1;
     color: black;
     margin-bottom: 20px;
 }
-.about-text h5{
-        color: black;
-        text-align: center;
-        margin-left: 15%;
-        margin-right: 15%;
-        font-size: 20px;
-        font-weight: 250;
-        line-height: 1;
-        margin-bottom: 20px;
+
+.about-text h5 {
+    color: black;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 1;
+    margin-bottom: 20px;
 }
-.founder{
+
+.founder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.founder img{
+
+.founder img {
     width: auto;
     height: 400px;
     margin-left: 36%;
 }
-.founder-img h1{
+
+.founder-img h1 {
     font-size: 30px;
     text-align: center;
     line-height: 1;
     color: black;
     margin-bottom: 20px;
 }
-.founder-text h1{
+
+.founder-text h1 {
     font-size: 25px;
     text-align: center;
     line-height: 1;
     color: black;
     margin-bottom: 20px;
 }
-.founder-text h5{
+
+.founder-text h5 {
     color: black;
     font-size: 20px;
     font-weight: 250;
