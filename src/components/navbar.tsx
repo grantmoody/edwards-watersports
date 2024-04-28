@@ -17,7 +17,7 @@ const pageToEndpoint: { [key: string]: string } = {
     "Home": '',
     "More Info": 'info',
     'Rental Booking': '',
-    'About Us': '',
+    'About Us': 'about',
     'Contact Us': ''
 }
 
