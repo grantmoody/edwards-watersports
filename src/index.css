@@ -19,5 +19,11 @@ code {
 }
 
 .trixxImage {
-  width: 100%;
+  width: 80%;
+  display: inline !important;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
 }
