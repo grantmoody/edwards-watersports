@@ -101,37 +101,38 @@ function ResponsiveAppBar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">
-                                        <Link style={{ textDecoration: "none", color: "black" }} to={`/${pageToEndpoint[page]}`}>
+                                <Link key={page} style={{ textDecoration: "none", color: "inherit" }} to={`/${pageToEndpoint[page]}`}>
+                                    <MenuItem onClick={handleCloseNavMenu}>
+                                        <Typography textAlign="center">
                                             {page}
-                                        </Link>
-                                    </Typography>
-                                </MenuItem>
+                                        </Typography>
+                                    </MenuItem>
+                                </Link>
                             ))}
                         </Menu>
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
                         {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{
-                                    my: 2, color: 'black', display: 'block', paddingX: 8,
-                                    fontWeight: '500',
-                                    fontFamily: 'sans-serif',
-                                    '&:hover': { color: 'red', borderRadius: 5, textDecoration: 'underline', background: 'grey', textDecorationThickness: '0.1em', },
-                                    '&:not(:hover)': {
-                                        borderRadius: 5,
-                                    },
-                                }}>
-                                <Link style={{ textDecoration: "none", color: "black" }} to={`/${pageToEndpoint[page]}`}>
+                            <Link key={page} to={`/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
+                                <Button
+                                    onClick={handleCloseNavMenu}
+                                    sx={{
+                                        my: 2, color: 'black', display: 'block', paddingX: 8,
+                                        fontWeight: '500',
+                                        fontFamily: 'sans-serif',
+                                        '&:hover': { borderRadius: 5, background: '#d3d3d3', textDecorationThickness: '0.1em', },
+                                        '&:not(:hover)': {
+                                            borderRadius: 5,
+                                        },
+                                    }}
+                                >
                                     {page}
-                                </Link>
-                            </Button>
+                                </Button>
+                            </Link>
                         ))}
                     </Box>
+
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Menu
