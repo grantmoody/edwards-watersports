@@ -4,13 +4,15 @@ import './App.css';
 import NavBar from "./components/navbar";
 import MoreInfo from './page/moreInfo';
 import ContactUs from './page/contactUs';
+import AboutUs from './page/aboutUs';
 
 function App() {
   return (
     <>
       <NavBar />
       {/* <MoreInfo /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <AboutUs />
     </>
 
   );

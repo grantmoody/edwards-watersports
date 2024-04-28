@@ -9,7 +9,7 @@ const MoreInfo: React.FC = () => {
     ];
 
     return (
-        <Container className="moreInfo">
+        <Container className="centeredContainer">
             <Typography variant="h4" mt={3}>
                 Our Models
             </Typography>
