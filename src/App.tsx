@@ -1,17 +1,20 @@
 import React from 'react';
 import Home from "./page/home";
-import './App.css';
 import NavBar from "./components/navbar";
+import './App.css';
 import MoreInfo from './page/moreInfo';
-import ContactUs from './page/contactUs';
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <NavBar />
-      {/* <MoreInfo /> */}
-      <ContactUs />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/More Info" element={<MoreInfo />} />
+      </Routes>
+
+    </div>
 
   );
 }
