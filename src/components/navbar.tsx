@@ -23,7 +23,6 @@ const pageToEndpoint: { [key: string]: string } = {
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-    const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -33,52 +32,31 @@ function ResponsiveAppBar() {
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-
     return (
         <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        sx={{
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'sans-serif',
-                            fontWeight: 700,
-                            color: 'black',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Edward's Watersports
-                    </Typography>
-
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        sx={{
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'sans-serif',
-                            fontWeight: 700,
-                            color: 'black',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Edward's Watersports
-                    </Typography>
-
-                    <Box justifyContent={'flex-end'} sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} color={"black"}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
+                        <Typography
+                            variant="h5"
+                            noWrap
+                            component="a"
+                            sx={{
+                                fontFamily: 'sans-serif',
+                                fontWeight: "bold",
+                                color: 'black',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            Edward's Watersports
+                        </Typography>
                         <IconButton
                             size="large"
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            color="inherit"
+                            style={{ color: 'black' }}
+                            sx={{ display: { xs: 'block', md: 'none' } }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -112,18 +90,19 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
 
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: '4rem' }}>
                         {pages.map((page) => (
                             <Link key={page} to={`/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
                                 <Button
                                     onClick={handleCloseNavMenu}
                                     sx={{
-                                        my: 2, color: 'black', display: 'block', paddingX: 8,
-                                        fontWeight: '500',
+                                        color: 'black',
+                                        paddingX: 2,
+                                        fontWeight: '600',
                                         fontFamily: 'sans-serif',
-                                        '&:hover': { borderRadius: 5, background: '#d3d3d3', textDecorationThickness: '0.1em', },
+                                        '&:hover': { borderRadius: 3, background: '#d3d3d3', textDecorationThickness: '0.1em', },
                                         '&:not(:hover)': {
-                                            borderRadius: 5,
+                                            borderRadius: 3,
                                         },
                                     }}
                                 >
@@ -131,27 +110,6 @@ function ResponsiveAppBar() {
                                 </Button>
                             </Link>
                         ))}
-                    </Box>
-
-
-                    <Box sx={{ flexGrow: 0 }}>
-                        <Menu
-                            sx={{ mt: '25px' }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
-                        >
-                        </Menu>
                     </Box>
                 </Toolbar>
             </Container>
