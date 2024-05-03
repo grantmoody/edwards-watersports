@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/Poppins-Regular.otf') format('opentype');
+  /* You can specify additional font weights and styles here if needed */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,11 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 .centeredContainer {
@@ -27,3 +28,22 @@ code {
   outline: 0;
   outline: none;
 }
+
+.home {
+  background-image: url('../public/cdalake.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  margin-bottom: 1000px;
+  background-position: top right;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+

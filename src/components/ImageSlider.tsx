@@ -22,7 +22,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
     return (
         <Slider {...settings}>
             {images.map((imageUrl, index) => (
-                <div key={index} style={{ textAlign: 'center' }}>
+                <div key={index} className='slider-div'>
                     <Typography variant='h5' mt={3}>
                         <strong>
                             Sea-Doo Spark Trixx {index + 2}up

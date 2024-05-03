@@ -2,14 +2,18 @@ import { Container, Typography, Grid } from "@mui/material";
 import React from "react";
 import ImageSlider from "../components/ImageSlider";
 
-const MoreInfo: React.FC = () => {
+interface MoreInfoProps {
+    className?: string;
+  }
+
+const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
     const images = [
         'sparktrixx.png',
         'sparktrixx3.png',
     ];
 
     return (
-        <Container className="centeredContainer">
+        <Container className={`centeredContainer ${className}`} sx={{marginTop: '400px'}}>
             <Typography variant="h4" mt={3}>
                 Our Models
             </Typography>

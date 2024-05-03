@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { styled } from '@mui/system';
 import { Box, Typography, Button } from '@mui/material';
+import NavBar from "../components/navbar";
+import MoreInfo from './moreInfo';
+import zIndex from '@mui/material/styles/zIndex';
 
 const HeroSectionContainer = styled('section')({
     display: 'flex',
@@ -35,9 +38,30 @@ const FooterContainer = styled('footer')({
 });
 
 const Home: React.FC = () => {
+
+    const divRef = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (divRef.current) {
+                const top = divRef.current.getBoundingClientRect().top + 200;
+                const windowHeight = window.innerHeight;
+                setIsVisible(top < windowHeight);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        // Remove the event listener when component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <>
-            <HeroSectionContainer>
+        <div className='home'>
+            <NavBar />
+            <HeroSectionContainer sx={{ backgroundColor: 'rgba(255, 255, 255, 0.0)' }}>
                 <Box className="hero-text" sx={{ textAlign: 'left' }}>
                     <Typography variant="h6" mt={"1rem"} mb={"1rem"} color="black">Northern Idaho</Typography>
                     <Typography variant="h6" fontWeight="700" mb={"1rem"} color="black">Locally Owned Business</Typography>
@@ -58,18 +82,18 @@ const Home: React.FC = () => {
                             BOOK NOW
                         </Button>
                     </Box>
-                    <HeroImg>
-                        <img src="sparktrixx.png" alt="" />
-                    </HeroImg>
                 </Box>
             </HeroSectionContainer>
-
+            <div ref={divRef}>
+                <MoreInfo className={`fade-in ${isVisible ? 'is-visible' : ''}`} />
+            </div>
             <FooterContainer>
                 <a target="_blank" href="https://www.instagram.com/edwardswatersports/?igshid=MzRlODBiNWFlZA%3D%3D">
                     <i className="ri-instagram-line footer-link"></i>
                 </a>
             </FooterContainer>
-        </>
+
+        </div>
     );
 };
 
