@@ -82,7 +82,7 @@ function ResponsiveAppBar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <Link key={page} style={{ textDecoration: "none", color: "inherit" }} to={`/${pageToEndpoint[page]}`}>
+                                <Link key={page} target={page === 'Rental Booking' ? '_blank' : '_self'} style={{ textDecoration: "none", color: "inherit" }} to={page === 'Rental Booking' ? 'https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk' : `/${pageToEndpoint[page]}`}>
                                     <MenuItem onClick={handleCloseNavMenu}>
                                         <Typography textAlign="center">
                                             {page}
@@ -95,7 +95,7 @@ function ResponsiveAppBar() {
 
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: '4rem' }}>
                         {pages.map((page) => (
-                            <Link key={page} to={`/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
+                            <Link key={page} target={page === 'Rental Booking' ? '_blank' : '_self'} to={page === 'Rental Booking' ? 'https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk' : `/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
                                 <Button
                                     onClick={handleCloseNavMenu}
                                     sx={{
