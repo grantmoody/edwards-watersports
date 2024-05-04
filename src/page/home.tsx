@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                             color: 'black',
                             border: '1px solid black',
                             marginLeft: "1rem",
-                            background: 'transparent',
+                            backgroundColor: 'white',
                             transition: 'transform 0.3s',
                         }} sx={{
                             '&:hover': {
@@ -91,6 +91,22 @@ const Home: React.FC = () => {
             </div>
             <div>
                 <AboutUs />
+            </div>
+            <div className='bottomBackground'>
+                <Button style={{
+                    color: 'black',
+                    border: '2px solid black',
+                    marginLeft: "1rem",
+                    backgroundColor: 'white',
+                    fontSize: '24px',
+                    transition: 'transform 0.3s',
+                }} sx={{
+                    '&:hover': {
+                        transform: 'translateY(-.5rem)',
+                    },
+                }} variant="contained" href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
+                    BOOK NOW
+                </Button>
             </div>
             <FooterContainer>
                 <a target="_blank" href="https://www.instagram.com/edwardswatersports/?igshid=MzRlODBiNWFlZA%3D%3D">

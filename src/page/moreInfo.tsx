@@ -33,7 +33,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
             <Grid container justifyContent="center" >
                 <Grid item>
                     <Typography mt={3} mb={5} maxWidth={"500px"}>
-                        We offer our services to Hayden and Coeur d' Alene Lake. Before you are allowed to ride the jetskis, we kindly ask that you review our waiver to fill out in person, and also watch the informational videos provided on our website.
+                        We offer our services to Hayden and Coeur d' Alene Lake. Before you are allowed to ride the jetskis, we kindly ask that you review our waiver to fill out in person. If you have more questions take a look at our <a>FAQ</a>.
                     </Typography>
                 </Grid>
             </Grid>

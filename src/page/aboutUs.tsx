@@ -3,14 +3,11 @@ import React from "react";
 
 const AboutUs: React.FC = () => {
     return (
-        <Container className="centeredContainer aboutBackground">
-            <Typography variant="h4" mt={8}>
-                Who we are
-            </Typography>
-            <Grid container spacing={3} mt={1} mb={5}>
-                <Grid item sm={12} md={8}>
-                <Typography mt={2}>
-                        Welcome to Edwards Watersports!
+        <Container className="centeredContainer aboutBackground" sx={{maxWidth: 'none !important'}}>
+            <Grid container spacing={3} mt={0} mb={15}>
+                <Grid item>
+                    <img src="edwards_watersports_logo.png" style={{ width: "250px", height: "250px", objectFit: "contain" }} />    
+                    <Typography>
                         We are a family-owned and operated business
                         that provides thrilling and relaxing jet ski rentals.
                         Our top priority is the safety and satisfaction of
@@ -27,9 +24,6 @@ const AboutUs: React.FC = () => {
                         Monday-Sunday from 8AM to 8PM. Come visit us
                         and experience the thrill of jet skiing!
                     </Typography>
-                </Grid>
-                <Grid item sm={12} md={4} mt={2}>
-                    <img src="newethan.png" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 </Grid>
             </Grid>
         </Container>

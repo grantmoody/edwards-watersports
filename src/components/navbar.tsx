@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import { Avatar } from '@mui/material';
 
 const pages = ['Home', 'Rental Booking', 'Contact Us'];
 
@@ -35,19 +36,23 @@ function ResponsiveAppBar() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
-                        <Typography
-                            variant="h5"
-                            noWrap
-                            component="a"
-                            sx={{
-                                fontFamily: 'sans-serif',
-                                fontWeight: "bold",
-                                color: 'black',
-                                textDecoration: 'none',
-                            }}
-                        >
-                            Edward's Watersports
-                        </Typography>
+                        <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+                            <img src="edwards_watersports_logo.png" style={{ width: '50px', verticalAlign: 'middle' }} />
+                            <Typography
+                                variant="h5"
+                                noWrap
+                                component="a"
+                                sx={{
+                                    fontFamily: 'sans-serif',
+                                    fontWeight: "bold",
+                                    color: 'black',
+                                    textDecoration: 'none',
+                                    verticalAlign: 'middle', // align the text with the image vertically
+                                }}
+                            >
+                                Edward's Watersports
+                            </Typography>
+                        </span>
                         <IconButton
                             size="large"
                             aria-controls="menu-appbar"
