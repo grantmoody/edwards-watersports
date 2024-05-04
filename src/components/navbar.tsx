@@ -11,13 +11,11 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'More Info', 'Rental Booking', 'About Us', 'Contact Us'];
+const pages = ['Home', 'Rental Booking', 'Contact Us'];
 
 const pageToEndpoint: { [key: string]: string } = {
     "Home": '',
-    "More Info": 'info',
     'Rental Booking': '',
-    'About Us': 'about',
     'Contact Us': ''
 }
 

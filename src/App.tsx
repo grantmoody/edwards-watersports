@@ -1,7 +1,5 @@
 import Home from "./page/home";
-import NavBar from "./components/navbar";
 import './App.css';
-import MoreInfo from './page/moreInfo';
 import AboutUs from './page/aboutUs';
 import { Routes, Route } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -18,7 +16,6 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/info" element={<MoreInfo />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
       </div>

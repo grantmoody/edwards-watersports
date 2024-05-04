@@ -38,6 +38,10 @@ body {
   background-position: top right;
 }
 
+.aboutBackground {
+  background-color: #D0DDE9;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 1.5s ease;

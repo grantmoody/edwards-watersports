@@ -4,6 +4,7 @@ import { Box, Typography, Button } from '@mui/material';
 import NavBar from "../components/navbar";
 import MoreInfo from './moreInfo';
 import zIndex from '@mui/material/styles/zIndex';
+import AboutUs from './aboutUs';
 
 const HeroSectionContainer = styled('section')({
     display: 'flex',
@@ -40,6 +41,7 @@ const FooterContainer = styled('footer')({
 const Home: React.FC = () => {
 
     const divRef = useRef<HTMLDivElement>(null);
+    const divRef2 = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -86,6 +88,9 @@ const Home: React.FC = () => {
             </HeroSectionContainer>
             <div ref={divRef}>
                 <MoreInfo className={`fade-in ${isVisible ? 'is-visible' : ''}`} />
+            </div>
+            <div>
+                <AboutUs />
             </div>
             <FooterContainer>
                 <a target="_blank" href="https://www.instagram.com/edwardswatersports/?igshid=MzRlODBiNWFlZA%3D%3D">
