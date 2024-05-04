@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                             '&:hover': {
                                 transform: 'translateX(.5rem)',
                             },
-                        }} variant="contained" href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
+                        }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                             BOOK NOW
                         </Button>
                     </Box>
@@ -104,7 +104,7 @@ const Home: React.FC = () => {
                     '&:hover': {
                         transform: 'translateY(-.5rem)',
                     },
-                }} variant="contained" href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
+                }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                     BOOK NOW
                 </Button>
             </div>
