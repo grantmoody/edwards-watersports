@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
 
     return (
         <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
-            <Container maxWidth="xl">
+            <Container sx={{ maxWidth: "none !important", overflow: "hidden" }}>
                 <Toolbar disableGutters>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
                         <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
@@ -42,8 +42,8 @@ function ResponsiveAppBar() {
                                 variant="h5"
                                 noWrap
                                 component="a"
+                                className='headerText'
                                 sx={{
-                                    fontFamily: 'sans-serif',
                                     fontWeight: "bold",
                                     color: 'black',
                                     textDecoration: 'none',

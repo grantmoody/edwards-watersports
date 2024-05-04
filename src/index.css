@@ -35,17 +35,34 @@ body {
   background-repeat: no-repeat;
   height: 800px;
   margin-bottom: 1000px;
-  background-position: top right;
+  background-position: center;
 }
+
+
+
 
 .bottomBackground {
   background-image: url('../public/haydenblend.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
-  /* margin-bottom: 1000px;
-  background-position: top right; */
+  height: 400px;
+  background-position: top;
 }
+
+@media only screen and (min-width: 1000px) {
+  .bottomBackground {
+    height: 800px;
+    /* Adjust the height for large screens */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .headerText {
+    font-size: 18px !important;
+    /* Adjust the height for large screens */
+  }
+}
+
 
 .aboutBackground {
   background-color: #D0DDE9;
@@ -59,4 +76,3 @@ body {
 .fade-in.is-visible {
   opacity: 1;
 }
-

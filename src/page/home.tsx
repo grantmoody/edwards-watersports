@@ -64,7 +64,7 @@ const Home: React.FC = () => {
         <div className='home'>
             <NavBar />
             <HeroSectionContainer sx={{ backgroundColor: 'rgba(255, 255, 255, 0.0)' }}>
-                <Box className="hero-text" sx={{ textAlign: 'left' }}>
+                <Box className="hero-text" sx={{ textAlign: 'left', width: "90%" }}>
                     <Typography variant="h6" mt={"1rem"} mb={"1rem"} color="black">Northern Idaho</Typography>
                     <Typography variant="h6" fontWeight="700" mb={"1rem"} color="black">Locally Owned Business</Typography>
                     <Typography variant="h2" fontWeight="800" color="black">Jetski Rentals</Typography>
@@ -89,17 +89,15 @@ const Home: React.FC = () => {
             <div ref={divRef}>
                 <MoreInfo className={`fade-in ${isVisible ? 'is-visible' : ''}`} />
             </div>
-            <div>
-                <AboutUs />
-            </div>
+            <AboutUs />
             <div className='bottomBackground'>
                 <Button style={{
                     color: 'black',
                     border: '2px solid black',
-                    marginLeft: "1rem",
                     backgroundColor: 'white',
                     fontSize: '24px',
                     transition: 'transform 0.3s',
+                    marginTop: '100px'
                 }} sx={{
                     '&:hover': {
                         transform: 'translateY(-.5rem)',
@@ -108,6 +106,7 @@ const Home: React.FC = () => {
                     BOOK NOW
                 </Button>
             </div>
+
             <FooterContainer>
                 <a target="_blank" href="https://www.instagram.com/edwardswatersports/?igshid=MzRlODBiNWFlZA%3D%3D">
                     <i className="ri-instagram-line footer-link"></i>

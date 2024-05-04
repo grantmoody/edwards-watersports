@@ -4,7 +4,7 @@ import React from "react";
 const AboutUs: React.FC = () => {
     return (
         <Container className="centeredContainer aboutBackground" sx={{maxWidth: 'none !important'}}>
-            <Grid container spacing={3} mt={0} mb={15}>
+            <Grid container spacing={3} mt={0}>
                 <Grid item>
                     <img src="edwards_watersports_logo.png" style={{ width: "250px", height: "250px", objectFit: "contain" }} />    
                     <Typography>
