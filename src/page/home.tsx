@@ -3,7 +3,6 @@ import { styled } from '@mui/system';
 import { Box, Typography, Button } from '@mui/material';
 import NavBar from "../components/navbar";
 import MoreInfo from './moreInfo';
-import zIndex from '@mui/material/styles/zIndex';
 import AboutUs from './aboutUs';
 
 const HeroSectionContainer = styled('section')({
@@ -14,14 +13,6 @@ const HeroSectionContainer = styled('section')({
     textAlign: 'center',
     padding: '2rem',
     backgroundColor: 'white',
-});
-
-const HeroImg = styled('div')({
-    marginTop: '1rem',
-    '& img': {
-        maxWidth: '100%',
-        height: 'auto',
-    },
 });
 
 const FooterContainer = styled('footer')({
@@ -41,7 +32,7 @@ const FooterContainer = styled('footer')({
 const Home: React.FC = () => {
 
     const divRef = useRef<HTMLDivElement>(null);
-    const divRef2 = useRef<HTMLDivElement>(null);
+
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -63,6 +54,7 @@ const Home: React.FC = () => {
     return (
         <div className='home'>
             <NavBar />
+
             <HeroSectionContainer sx={{ backgroundColor: 'rgba(255, 255, 255, 0.0)' }}>
                 <Box className="hero-text" sx={{ textAlign: 'left', width: "90%" }}>
                     <Typography variant="h6" mt={"1rem"} mb={"1rem"} color="black">Northern Idaho</Typography>
@@ -86,10 +78,19 @@ const Home: React.FC = () => {
                     </Box>
                 </Box>
             </HeroSectionContainer>
+            <section>
+                <div className="wave wave1" />
+                <div className="wave wave2" />
+                <div className="wave wave3" />
+                <div className="wave wave4" />
+            </section>
             <div ref={divRef}>
                 <MoreInfo className={`fade-in ${isVisible ? 'is-visible' : ''}`} />
             </div>
-            <AboutUs />
+
+            <div>
+                <AboutUs />
+            </div>
             <div className='bottomBackground'>
                 <Button style={{
                     color: 'black',

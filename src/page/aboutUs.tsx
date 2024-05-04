@@ -4,10 +4,10 @@ import React from "react";
 const AboutUs: React.FC = () => {
     return (
         <Container className="centeredContainer aboutBackground" sx={{maxWidth: 'none !important'}}>
-            <Grid container spacing={3} mt={0}>
+            <Grid container spacing={3} mt={0} justifyContent={'center'}>
                 <Grid item>
                     <img src="edwards_watersports_logo.png" style={{ width: "250px", height: "250px", objectFit: "contain" }} />    
-                    <Typography>
+                    <Typography maxWidth={'500px'}>
                         We are a family-owned and operated business
                         that provides thrilling and relaxing jet ski rentals.
                         Our top priority is the safety and satisfaction of
