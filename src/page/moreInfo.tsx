@@ -4,7 +4,7 @@ import ImageSlider from "../components/ImageSlider";
 
 interface MoreInfoProps {
     className?: string;
-  }
+}
 
 const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
     const images = [
@@ -13,7 +13,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
     ];
 
     return (
-        <Container className={`centeredContainer ${className}`} sx={{marginTop: '400px'}}>
+        <Container className={`centeredContainer ${className}`}>
             <Typography variant="h4" mt={3}>
                 Our Models
             </Typography>
