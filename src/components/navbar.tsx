@@ -37,7 +37,7 @@ function ResponsiveAppBar() {
                 <Toolbar disableGutters>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
                         <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                            <img src="edwards_watersports_logo.png" style={{ width: '250px', paddingTop: '20px', paddingLeft: '10px', verticalAlign: 'middle' }} />
+                            <img src="edwards_watersports_logo.png" style={{ width: '300px', paddingTop: '20px', paddingLeft: '2vw', verticalAlign: 'middle' }} />
                             {/* <Typography
                                 variant="h5"
                                 noWrap
