@@ -12,12 +12,13 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import { Avatar } from '@mui/material';
 
-const pages = ['Home', 'Rental Booking', 'Contact Us'];
+const pages = ['Home', 'Rental Booking', 'Contact Us', 'FAQ'];
 
 const pageToEndpoint: { [key: string]: string } = {
-    "Home": '',
+    'Home': '',
     'Rental Booking': '',
-    'Contact Us': ''
+    'Contact Us': 'contact_us',
+    'FAQ': 'faq'
 }
 
 function ResponsiveAppBar() {

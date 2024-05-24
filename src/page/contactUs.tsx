@@ -1,12 +1,14 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import NavBar from "../components/navbar";
+
 
 const ContactUs: React.FC = () => {
     return (
         <>
-            <Typography variant="h1">
-                Freak u zac
-            </Typography>
+            <div>
+                <NavBar />
+            </div>
         </>
     )
 }
