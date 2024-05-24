@@ -25,6 +25,13 @@ body {
   align-content: center;
 }
 
+.jetskilogo {
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 2vw;
+  vertical-align: middle;
+}
+
 .trixxImage {
   width: 80%;
   display: inline !important;
@@ -91,6 +98,10 @@ section .wave.wave4 {
 @media screen and (max-width: 450px) {
   section .wave {
     background-size: 500px 100px;
+  }
+
+  .jetskilogo {
+    width: 150px;
   }
 }
 
