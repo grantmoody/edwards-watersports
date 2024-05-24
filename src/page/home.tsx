@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                     <Box className="hero-text" sx={{ textAlign: 'left', width: "90%" }}>
                         <Typography variant="h6" mt={"1rem"} mb={"1rem"} color="black">Northern Idaho</Typography>
                         <Typography variant="h6" fontWeight="700" mb={"1rem"} color="black">Locally Owned Business</Typography>
-                        <Typography variant="h2" fontWeight="800" color="black">Jet Ski Rentals</Typography>
+                        <Typography variant="h2" fontWeight="800" color="black" sx={{fontFamily: 'PermanentMarker, sans-serif !important'}}>Jet Ski Rentals</Typography>
                         <Typography variant="body1" mt={"2rem"} mb={"2rem"} color="black">Edwards Watersports is much more than just an amazing Water Sports Equipment Rental Service.</Typography>
                         <Box>
                             <Button style={{
@@ -72,6 +72,7 @@ const Home: React.FC = () => {
                                 '&:hover': {
                                     transform: 'translateX(.5rem)',
                                 },
+                                fontFamily: 'PermanentMarker, sans-serif !important',
                             }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                                 BOOK NOW
                             </Button>
@@ -104,6 +105,7 @@ const Home: React.FC = () => {
                     '&:hover': {
                         transform: 'translateY(-.5rem)',
                     },
+                    fontFamily: 'PermanentMarker, sans-serif !important',
                 }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                     BOOK NOW
                 </Button>

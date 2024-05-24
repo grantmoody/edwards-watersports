@@ -14,7 +14,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
 
     return (
         <Container className={`centeredContainer ${className}`}>
-            <Typography variant="h4" mt={3}>
+            <Typography variant="h4" mt={3} sx={{fontFamily: 'PermanentMarker, sans-serif !important'}}>
                 Our Models
             </Typography>
             <Grid container justifyContent="center" >
@@ -27,7 +27,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
                 </Grid>
             </Grid>
             <ImageSlider images={images}></ImageSlider>
-            <Typography variant="h4" mt={4}>
+            <Typography variant="h4" mt={4} sx={{fontFamily: 'PermanentMarker, sans-serif !important'}}>
                 Rental Information
             </Typography>
             <Grid container justifyContent="center" >

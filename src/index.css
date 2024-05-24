@@ -4,6 +4,12 @@
   /* You can specify additional font weights and styles here if needed */
 }
 
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url('../public/PermanentMarker-Regular.otf') format('opentype');
+  /* You can specify additional font weights and styles here if needed */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
