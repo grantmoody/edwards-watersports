@@ -37,8 +37,8 @@ function ResponsiveAppBar() {
                 <Toolbar disableGutters>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
                         <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                            <img src="edwards_watersports_logo.png" style={{ width: '50px', verticalAlign: 'middle' }} />
-                            <Typography
+                            <img src="edwards_watersports_logo.png" style={{ width: '250px', paddingTop: '20px', paddingLeft: '10px', verticalAlign: 'middle' }} />
+                            {/* <Typography
                                 variant="h5"
                                 noWrap
                                 component="a"
@@ -50,8 +50,8 @@ function ResponsiveAppBar() {
                                     verticalAlign: 'middle', // align the text with the image vertically
                                 }}
                             >
-                                Edward's Watersports
-                            </Typography>
+                                Edwards Watersports
+                            </Typography> */}
                         </span>
                         <IconButton
                             size="large"

@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                     <Box className="hero-text" sx={{ textAlign: 'left', width: "90%" }}>
                         <Typography variant="h6" mt={"1rem"} mb={"1rem"} color="black">Northern Idaho</Typography>
                         <Typography variant="h6" fontWeight="700" mb={"1rem"} color="black">Locally Owned Business</Typography>
-                        <Typography variant="h2" fontWeight="800" color="black">Jetski Rentals</Typography>
+                        <Typography variant="h2" fontWeight="800" color="black">Jet Ski Rentals</Typography>
                         <Typography variant="body1" mt={"2rem"} mb={"2rem"} color="black">Edwards Watersports is much more than just an amazing Water Sports Equipment Rental Service.</Typography>
                         <Box>
                             <Button style={{
