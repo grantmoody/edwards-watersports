@@ -93,7 +93,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
 
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: '4rem' }}>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: { md: '5rem', lg: '9rem' } }}>
                         {pages.map((page) => (
                             <Link key={page} target={page === 'Rental Booking' ? '_blank' : '_self'} to={page === 'Rental Booking' ? 'https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk' : `/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
                                 <Button
@@ -101,11 +101,12 @@ function ResponsiveAppBar() {
                                     sx={{
                                         color: 'black',
                                         paddingX: 2,
-                                        fontWeight: '600',
+                                        fontSize: 18,
+                                        fontWeight: '800',
                                         fontFamily: 'sans-serif',
-                                        '&:hover': { borderRadius: 3, background: '#d3d3d3', textDecorationThickness: '0.1em', },
+                                        '&:hover': { borderRadius: 4, background: '#d3d3d3', textDecorationThickness: '0.3em', },
                                         '&:not(:hover)': {
-                                            borderRadius: 3,
+                                            borderRadius: 4,
                                         },
                                     }}
                                 >
