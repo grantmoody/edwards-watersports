@@ -93,7 +93,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
 
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: { md: '5rem', lg: '9rem' } }}>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: { md: '3rem', lg: '9rem' } }}>
                         {pages.map((page) => (
                             <Link key={page} target={page === 'Rental Booking' ? '_blank' : '_self'} to={page === 'Rental Booking' ? 'https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk' : `/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
                                 <Button
