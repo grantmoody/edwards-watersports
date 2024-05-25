@@ -10,7 +10,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import { Avatar } from '@mui/material';
 
 const pages = ['Home', 'Rental Booking', 'Contact Us'];
 
@@ -38,20 +37,6 @@ function ResponsiveAppBar() {
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
                         <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
                             <img src="edwards_watersports_logo.png" className='jetskilogo' />
-                            {/* <Typography
-                                variant="h5"
-                                noWrap
-                                component="a"
-                                className='headerText'
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: 'black',
-                                    textDecoration: 'none',
-                                    verticalAlign: 'middle', // align the text with the image vertically
-                                }}
-                            >
-                                Edwards Watersports
-                            </Typography> */}
                         </span>
                         <IconButton
                             size="large"
@@ -93,7 +78,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
 
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: { md: '2.5rem', lg: '9rem' } }}>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: { md: '2.5rem', lg: '9rem' }, mb: "9rem" }}>
                         {pages.map((page) => (
                             <Link key={page} target={page === 'Rental Booking' ? '_blank' : '_self'} to={page === 'Rental Booking' ? 'https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk' : `/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
                                 <Button
@@ -101,7 +86,10 @@ function ResponsiveAppBar() {
                                     sx={{
                                         color: 'black',
                                         paddingX: 2,
-                                        fontSize: 18,
+                                        fontSize: {
+                                            md: 18,
+                                            lg: 23
+                                        },
                                         fontWeight: '800',
                                         fontFamily: 'PermanentMarker, sans-serif !important',
                                         '&:hover': { borderRadius: 4, background: '#d3d3d3', textDecorationThickness: '0.3em', },
