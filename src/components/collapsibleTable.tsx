@@ -12,6 +12,13 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Questions from '../data/faq_questions.json';
+
+interface Question {
+  id: number;
+  prompt: string;
+  answer: string;
+}
 
 function createData(
   question: string,
@@ -23,17 +30,19 @@ function createData(
   };
 }
 
+const questions: Question[] = Questions.questions;
+
 function Row(props: { row: ReturnType<typeof createData> }) {
   const { row } = props;
   const [open, setOpen] = React.useState(false);
-
+  
   const toggleRow = () => {
     setOpen(!open);
   };
 
   return (
     <>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' }, marginBottom: '10rem' }} onClick={toggleRow}>
+      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }} onClick={toggleRow}>
         <TableCell align="left" component="th" scope="row">
           {row.question}
         </TableCell>
@@ -54,7 +63,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
-              <Typography variant="body1" mt={"1rem"} mb={"1 rem"} color="black">
+              <Typography variant="body1" mt="1rem" mb="1rem" color="black">
                 {row.answer}
               </Typography>
             </Box>
@@ -65,30 +74,29 @@ function Row(props: { row: ReturnType<typeof createData> }) {
   );
 }
 
-const rows = [
-  createData('Question 1', 'answer 1w'),
-  createData('Question 2', 'answer 2'),
-  createData('Question 3', 'answer 3'),
-  createData('Question 4', 'answer 4'),
-  createData('Question 5', 'answer 5'),
-];
+const rows = questions.map((question) => (createData(question.prompt, question.answer)));
 
 export default function CollapsibleTable() {
   return (
-    <TableContainer component={Paper}>
-      <Table aria-label="collapsible table">
-        {rows.map((row) => (
-          <TableBody sx={{pb: '5px'}}>
-            <Row key={row.question} row={row} />
-          </TableBody>
-        ))}
-        {/* <TableBody>
-          {rows.map((row) => (
-            // <Row key={row.question} row={row} />
-            
-          ))}
-        </TableBody> */}
-      </Table>
-    </TableContainer>
+    <>
+      {rows.map((row) => (
+        <Box key={row.question} sx={{ marginBottom: '10px', marginLeft: '10px', marginRight: '10px' }}>
+          <TableContainer
+            component={Paper}
+            sx={{
+              boxShadow: 'none',
+              border: '1px solid #ddd',
+              backgroundColor: '#f9f9f9'
+            }}
+          >
+            <Table aria-label="collapsible table">
+              <TableBody>
+                <Row row={row} />
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Box>
+      ))}
+    </>
   );
 }
