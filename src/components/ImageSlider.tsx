@@ -23,7 +23,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
         <Slider {...settings}>
             {images.map((imageUrl, index) => (
                 <div key={index} className='slider-div'>
-                    <Typography variant='h5' mt={3} sx={{fontFamily: 'PermanentMarker, sans-serif !important'}}>
+                    <Typography variant='h5' mt={3} >
                         <strong>
                             Sea-Doo Spark Trixx {index + 2}up
                         </strong>

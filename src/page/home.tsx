@@ -58,15 +58,13 @@ const Home: React.FC = () => {
                 <NavBar />
                 <HeroSectionContainer sx={{ backgroundColor: 'rgba(255, 255, 255, 0.0)' }}>
                     <Box className="hero-text" sx={{ textAlign: 'left', width: "90%" }}>
-                        <Typography variant="h6" mt={"1rem"} mb={"1rem"} color="black">Northern Idaho</Typography>
-                        <Typography variant="h6" fontWeight="700" mb={"1rem"} color="black">Locally Owned Business</Typography>
-                        <Typography variant="h2" fontWeight="800" color="black" sx={{ fontFamily: 'PermanentMarker, sans-serif !important' }}>Jet Ski Rentals</Typography>
-                        <Typography variant="body1" mt={"2rem"} mb={"2rem"} color="black">Edwards Watersports is much more than just an amazing Water Sports Equipment Rental Service.</Typography>
+                        <Typography variant="h2" fontWeight="800" color="black" sx={{fontWeight: 'bold'}}>North Idaho<br />Jet Ski<br />Rentals</Typography>
                         <Box sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            width: '100%'
+                            width: '100%',
+                            marginTop: '50px'
                         }}>
                             <Button style={{
                                 color: 'black',
@@ -108,7 +106,6 @@ const Home: React.FC = () => {
                                     transform: 'translateX(.5rem)',
                                     color: blue
                                 },
-                                fontFamily: 'PermanentMarker, sans-serif !important',
                                 fontSize: { sm: 14, md: 18, lg: 22 },
                             }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                                 BOOK NOW
@@ -172,12 +169,16 @@ const Home: React.FC = () => {
                                     transform: 'translateX(.5rem)',
                                     color: blue
                                 },
-                                fontFamily: 'PermanentMarker, sans-serif !important',
                                 fontSize: { sm: 14, md: 18, lg: 22 },
                             }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                     BOOK NOW
                 </Button>
             </div>
+            <footer style={{ backgroundColor: '#f2f2f2', padding: '20px', textAlign: 'center' }}>
+                <h2>Contact Us</h2>
+                <p style={{ fontSize: '18px' }}>Phone: 208-771-5175</p>
+                <p style={{ fontSize: '18px' }}>Email: edwardswatersports@gmail.com</p>
+            </footer>
         </div>
     );
 };

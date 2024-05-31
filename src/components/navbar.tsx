@@ -11,12 +11,11 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'Rental Booking', 'Contact Us'];
+const pages = ['Home', 'Rental Booking'];
 
 const pageToEndpoint: { [key: string]: string } = {
     "Home": '',
     'Rental Booking': '',
-    'Contact Us': ''
 }
 
 function ResponsiveAppBar() {
@@ -91,7 +90,6 @@ function ResponsiveAppBar() {
                                             lg: 23
                                         },
                                         fontWeight: '800',
-                                        fontFamily: 'PermanentMarker, sans-serif !important',
                                         '&:hover': { borderRadius: 4, background: '#d3d3d3', textDecorationThickness: '0.3em', },
                                         '&:not(:hover)': {
                                             borderRadius: 4,
