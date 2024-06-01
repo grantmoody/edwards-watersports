@@ -110,7 +110,11 @@ const Home: React.FC = () => {
                             }} variant="contained" target='_blank' href="https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk">
                                 BOOK NOW
                             </Button>
+                            
                         </Box>
+                        <Typography variant='h4' textAlign={"center"} paddingTop={"10px"}>
+                                *USE CODE <strong>JUNE15</strong> for 15% off in the month of June!
+                        </Typography>
                     </Box>
                 </HeroSectionContainer>
             </div>
