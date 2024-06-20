@@ -80,13 +80,13 @@ export default function CollapsibleTable() {
   return (
     <>
       {rows.map((row) => (
-        <Box key={row.question} sx={{ marginBottom: '10px', marginLeft: '10px', marginRight: '10px' }}>
+        <Box key={row.question} sx={{ marginBottom: '10px', marginLeft: '10px', marginRight: '10px', fontSize: '3rem' }}>
           <TableContainer
             component={Paper}
             sx={{
               boxShadow: 'none',
               border: '1px solid #ddd',
-              backgroundColor: '#f9f9f9'
+              backgroundColor: '#D0DDE9'
             }}
           >
             <Table aria-label="collapsible table">

@@ -2,28 +2,33 @@
     "questions": [
         {
             "id": 1,
-            "prompt": "question prompt",
-            "answer": "question answer"
+            "prompt": "When do I pay?",
+            "answer": "Payment is due at the time of the reservation and can be made with a credit card. You may cancel up to 10 days prior to your rental date and receive a full refund."
         },
         {
             "id": 2,
-            "prompt": "question prompt",
-            "answer": "question answer"
+            "prompt": "Where do we go?",
+            "answer": "For Coeur d'Alene Lake rentals, we deliver to 208 S 3rd street. For Hayden Lake rentals we deliver to 2369 E Honeysuckle Ave."
         },
         {
             "id": 3,
-            "prompt": "question prompt",
-            "answer": "question answer"
+            "prompt": "What about gas?",
+            "answer": "There are multiple marinas around both Coeur d'Alene and Hayden lake that sell gas if needed. Watercraft gauges are never 100% accurate and we highly recommend getting fuel before reaching a ¼ tank remaining. You are not required to fill up with gas before returning."
         },
         {
             "id": 4,
-            "prompt": "question prompt",
-            "answer": "question answer"
+            "prompt": "How old do I have to be to rent or operate?",
+            "answer": "You must be 18 years of age or older rent a jet ski, and at least 16 years old to operate one."
         },
         {
             "id": 5,
-            "prompt": "question prompt",
-            "answer": "question answer"
+            "prompt": "Is there a damage deposit?",
+            "answer": "No! The booking payment covers all expenses."
+        },
+        {
+            "id": 6,
+            "prompt": "What is our cancellation policy?",
+            "answer": "There is no cancellation fee if you cancel more than 10 days before your reservation date. If you cancel less than 10 days but more than 48 hours from your rental date then there is a 15% fee charged. There are no refunds given 48 hours or less from the rental date. If on the day you rent it is hazardous to be on the water (such as lightning or very high winds) then we will first try to move you to another day if possible, if another day will not work then a full refund will be given."
         }
     ]
 }
