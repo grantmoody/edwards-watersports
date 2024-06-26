@@ -6,13 +6,14 @@ import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Questions from '../data/faq_questions.json';
+import Link from '@mui/material/Link';
+
 
 interface Question {
   id: number;
@@ -21,10 +22,12 @@ interface Question {
 }
 
 function createData(
+  id: number,
   question: string,
   answer: string,
 ) {
   return {
+    id,
     question,
     answer,
   };
@@ -35,16 +38,18 @@ const questions: Question[] = Questions.questions;
 function Row(props: { row: ReturnType<typeof createData> }) {
   const { row } = props;
   const [open, setOpen] = React.useState(false);
-  
+
   const toggleRow = () => {
     setOpen(!open);
   };
 
   return (
     <>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }} onClick={toggleRow}>
+      <TableRow sx={{ padding: 'none' }} onClick={toggleRow}>
         <TableCell align="left" component="th" scope="row">
-          {row.question}
+          <Box sx={{ fontWeight: 'bold', fontSize: '1.05rem', color: 'black'}}>
+              {row.question}
+          </Box>
         </TableCell>
         <TableCell align="right">
           <IconButton
@@ -65,6 +70,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
             <Box sx={{ margin: 1 }}>
               <Typography variant="body1" mt="1rem" mb="1rem" color="black">
                 {row.answer}
+                {row.id === 7 ? <Link href="https://assets.kalkomey.com/boater/pdfs/handbook/idaho-handbook-entire.pdf" target="_blank">here.</Link> : ""}
               </Typography>
             </Box>
           </Collapse>
@@ -74,22 +80,30 @@ function Row(props: { row: ReturnType<typeof createData> }) {
   );
 }
 
-const rows = questions.map((question) => (createData(question.prompt, question.answer)));
+const rows = questions.map((question) => (createData(question.id, question.prompt, question.answer)));
 
 export default function CollapsibleTable() {
   return (
     <>
       {rows.map((row) => (
-        <Box key={row.question} sx={{ marginBottom: '10px', marginLeft: '10px', marginRight: '10px', fontSize: '3rem' }}>
+        <Box 
+          key={1} 
+          sx={{ 
+            marginBottom: '10px', 
+            marginLeft: '10px', 
+            marginRight: '10px', 
+            fontSize: '3rem' 
+            }}>
           <TableContainer
             component={Paper}
             sx={{
               boxShadow: 'none',
-              border: '1px solid #ddd',
+              border: 'none',
+              // border: '1px solid #ddd',
               backgroundColor: '#D0DDE9'
             }}
           >
-            <Table aria-label="collapsible table">
+            <Table aria-label="collapsible table" sx = {{ marginTop: '0px'}}>
               <TableBody>
                 <Row row={row} />
               </TableBody>
