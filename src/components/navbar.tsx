@@ -10,14 +10,12 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import { Avatar } from '@mui/material';
 
-const pages = ['Home', 'Rental Booking', 'Contact Us', 'FAQ'];
+const pages = ['Home', 'Rental Booking', 'FAQ'];
 
 const pageToEndpoint: { [key: string]: string } = {
     'Home': '',
     'Rental Booking': '',
-    'Contact Us': 'contact_us',
     'FAQ': 'faq'
 }
 
@@ -38,21 +36,7 @@ function ResponsiveAppBar() {
                 <Toolbar disableGutters>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, justifyContent: 'space-between' }}>
                         <span style={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                            <img src="edwards_watersports_logo.png" style={{ width: '50px', verticalAlign: 'middle' }} />
-                            <Typography
-                                variant="h5"
-                                noWrap
-                                component="a"
-                                className='headerText'
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: 'black',
-                                    textDecoration: 'none',
-                                    verticalAlign: 'middle', // align the text with the image vertically
-                                }}
-                            >
-                                Edward's Watersports
-                            </Typography>
+                            <img src="edwards_watersports_logo.png" className='jetskilogo' />
                         </span>
                         <IconButton
                             size="large"
@@ -94,7 +78,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
 
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: '4rem' }}>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', gap: { md: '2.5rem', lg: '9rem' }, mb: "9rem" }}>
                         {pages.map((page) => (
                             <Link key={page} target={page === 'Rental Booking' ? '_blank' : '_self'} to={page === 'Rental Booking' ? 'https://www.peek.com/s/3e58fcb7-0751-4fb9-a8d6-b2d6582cb236/l79Dk' : `/${pageToEndpoint[page]}`} style={{ textDecoration: "none", color: "black" }}>
                                 <Button
@@ -102,11 +86,14 @@ function ResponsiveAppBar() {
                                     sx={{
                                         color: 'black',
                                         paddingX: 2,
-                                        fontWeight: '600',
-                                        fontFamily: 'sans-serif',
-                                        '&:hover': { borderRadius: 3, background: '#d3d3d3', textDecorationThickness: '0.1em', },
+                                        fontSize: {
+                                            md: 18,
+                                            lg: 23
+                                        },
+                                        fontWeight: '800',
+                                        '&:hover': { borderRadius: 4, background: '#d3d3d3', textDecorationThickness: '0.3em', },
                                         '&:not(:hover)': {
-                                            borderRadius: 3,
+                                            borderRadius: 4,
                                         },
                                     }}
                                 >

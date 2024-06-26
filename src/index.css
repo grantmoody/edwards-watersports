@@ -4,6 +4,12 @@
   /* You can specify additional font weights and styles here if needed */
 }
 
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url('../public/PermanentMarker-Regular.otf') format('opentype');
+  /* You can specify additional font weights and styles here if needed */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,6 +23,13 @@ body {
   text-align: center;
   display: flex;
   align-content: center;
+}
+
+.jetskilogo {
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 2vw;
+  vertical-align: middle;
 }
 
 .trixxImage {
@@ -85,6 +98,10 @@ section .wave.wave4 {
 @media screen and (max-width: 450px) {
   section .wave {
     background-size: 500px 100px;
+  }
+
+  .jetskilogo {
+    width: 150px;
   }
 }
 
