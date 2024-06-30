@@ -20,7 +20,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
             <Grid container justifyContent="center" >
                 <Grid item>
                     <Typography maxWidth={"500px"} mt={2}>
-                        We currently offer two Sea-Doo Spark Trixx 2ups and one Sea-Doo
+                        We currently offer two Sea-Doo Spark Trixx 2ups and two Sea-Doo
                         Spark Trixx 3up. These jet skis fit two people at a
                         time and have plenty of playful modes on them.
                     </Typography>
