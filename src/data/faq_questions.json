@@ -59,7 +59,7 @@
         {
             "id": 12,
             "prompt": "What is your cancellation policy?",
-            "answer": "There is no cancellation fee if you cancel more than 10 days before your reservation date. If you cancel less than 10 days but more than 48 hours from your rental date then there is a 15% fee charged. There are no refunds given 48 hours or less from the rental date. If on the day you rent it is hazardous to be on the water (such as lightning or very high winds) then we will first try to move you to another day if possible, if another day will not work then a full refund will be given."
+            "answer": "Full refunds will be granted for cancellation requests made more than 48 hours before the rental date. If there is hazardous weather on the water (such as lightning or very high winds) on the rental date, then we will first try to move you to another day if possible. If another day will not work, then a full refund will be given."
         }
     ]
 }
