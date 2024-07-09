@@ -58,7 +58,7 @@ const Home: React.FC = () => {
                 <NavBar />
                 <HeroSectionContainer sx={{ backgroundColor: 'rgba(255, 255, 255, 0.0)' }}>
                     <Box className="hero-text" sx={{ textAlign: 'left', width: "90%" }}>
-                        <Typography variant="h2" fontWeight="800" color="black" sx={{fontWeight: 'bold'}}>North Idaho<br />Jet Ski<br />Rentals</Typography>
+                        <Typography variant="h1" fontWeight="800" color="black" sx={{fontWeight: 'bold', fontSize: '60px'}}>North Idaho<br />Jet Ski<br />Rentals</Typography>
                         <Box sx={{
                             display: 'flex',
                             justifyContent: 'center',
