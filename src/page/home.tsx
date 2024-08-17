@@ -112,6 +112,9 @@ const Home: React.FC = () => {
                             </Button>
                             
                         </Box>
+                        <Typography variant='h4' textAlign={"center"} paddingTop={"10px"}>
+                                *Use code <strong>school24</strong> for 20% off!
+                        </Typography>
                     </Box>
                 </HeroSectionContainer>
             </div>
