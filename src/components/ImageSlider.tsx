@@ -25,7 +25,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
                 <div key={index} className='slider-div'>
                     <Typography variant='h5' mt={3} >
                         <strong>
-                            Sea-Doo Spark Trixx {index + 2}up
+                            {imageUrl === 'yamaha.png' ? 'Yamaha Waverunner' : `Sea-Doo Spark Trixx ${index + 2}up`}
                         </strong>
                     </Typography>
                     <img src={imageUrl} alt={`Slide ${index + 1}`} className='trixxImage' />

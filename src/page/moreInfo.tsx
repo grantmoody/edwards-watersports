@@ -10,6 +10,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
     const images = [
         'sparktrixx.png',
         'sparktrixx3.png',
+        'yamaha.png'
     ];
 
     return (
@@ -20,8 +21,8 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ className }) => {
             <Grid container justifyContent="center" >
                 <Grid item>
                     <Typography maxWidth={"500px"} mt={2}>
-                        We currently offer two Sea-Doo Spark Trixx 2ups and two Sea-Doo
-                        Spark Trixx 3up. These jet skis fit two people at a
+                        We currently offer two Sea-Doo Spark Trixx 2ups, two Sea-Doo
+                        Spark Trixx 3up, and a Yamaha Waverunner. These jet skis fit two people at a
                         time and have plenty of playful modes on them.
                     </Typography>
                 </Grid>
